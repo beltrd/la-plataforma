@@ -1,0 +1,84 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  background: #ffffff;
+  padding: 6px 16px;
+  height: 100%;
+  box-shadow: 5px 0 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+  overflow: hidden;
+  z-index: 9999;
+
+  &.active {
+    width: 300px;
+
+    .overlay__close-icon {
+      opacity: 1;
+    }
+
+    .logo-content {
+      opacity: 1;
+    }
+  }
+
+  .overlay__close-icon {
+    opacity: 0;
+  }
+
+  .logo-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+  }
+
+  .amrc-dashboard-links {
+    margin: 1rem 2rem 0 2rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      li {
+        display: inline-block;
+        text-align: left;
+
+        a {
+          font-weight: 500;
+          line-height: 50px;
+          position: relative;
+          margin-right: 5px;
+          color: #7e7e7e;
+        }
+
+        a:after {
+          position: absolute;
+          right: 0;
+          bottom: 15px;
+          left: auto;
+          width: 0;
+          height: 1px;
+          content: '';
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+          background-color: #333;
+        }
+
+        &:hover > a:after {
+          right: auto;
+          left: 0;
+          width: 100%;
+        }
+
+        &:hover {
+          a {
+            color: #333;
+          }
+        }
+      }
+    }
+  }
+}

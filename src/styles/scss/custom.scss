@@ -1,0 +1,11 @@
+button.custom {
+  background-color: #ed2079;
+}
+
+input.custom {
+  background-color: #ed2079;
+
+  &::placeholder {
+    color: #f8f8f8;
+  }
+}

@@ -1,0 +1,86 @@
+.modern-three-items-squares {
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  .border {
+    position: relative;
+    height: 80%;
+    width: 80%;
+    background: transparent;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    opacity: 1;
+    transition: 1s ease;
+  }
+
+  .border:hover {
+    opacity: 0;
+  }
+
+  .item-card {
+    position: relative;
+    height: 35vh;
+    width: 80vw;
+    background: #808080;
+    margin: 5px;
+    border-radius: 20px;
+    transition: 0.8s ease;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item-card {
+    background: #4d4d4d center center no-repeat;
+    background-size: 300px;
+  }
+
+  .item-card:hover {
+    background: #4d4d4d left center no-repeat;
+    background-size: 600px;
+  }
+
+  h2 {
+    position: absolute;
+    bottom: 130px;
+    left: 25px;
+    // width: 15px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .icon {
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 100px;
+    bottom: 30px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .icon i {
+    font-size: 20px;
+    transition: 0.2s ease;
+  }
+
+  .icon i:hover {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .modern-three-items-squares {
+    flex-direction: column;
+  }
+}

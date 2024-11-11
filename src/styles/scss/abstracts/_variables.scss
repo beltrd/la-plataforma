@@ -1,0 +1,161 @@
+// fonts
+$font-family: "Poppins", sans-serif;
+
+$font-color: #f8f8f8;
+
+// color
+$black: #fff;
+$black--two: #333;
+$black--three: #222;
+$white: #fff;
+$grey: #7e7e7e;
+$grey--two: #d6d6d6;
+$grey--three: #e7e7e7;
+$grey--four: #f8f8f8;
+$grey--five: #d1d1d1;
+$grey--six: #999999;
+$grey--seven: #4d4d4d;
+$grey--eight: #d0d0d0;
+$grey--nine: #dcdcdc;
+$grey--ten: #eeeeee;
+$grey--eleven: #ccc;
+$grey--twelve: #aaaaaa;
+$grey--thirteen: #dddddd;
+$grey--fourteen: #696969;
+$grey--fifteen: #ababab;
+$grey--sixteen: #d8d8d8;
+$grey--seventeen: #e0e0e0;
+$grey--eighteen: #ededed;
+$grey--nineteen: #e8e8e8;
+$grey--twenty: #e6e6e6;
+$grey--twentyOne: #f7f7f7;
+$grey--twentyTwo: #f2f2f2;
+$grey--twentyThree: #505050;
+$grey--twentyFour: #f9f9f9;
+$grey--twentyFive: #f0ddd6;
+$grey--twentySix: #878787;
+$grey--twentySeven: #9b9b9b;
+$grey--twentyEight: #ebebeb;
+$grey--twentyNine: #f4f4f4;
+$grey--thirty: #abb8c0;
+$red--one: #d3122a;
+$red--two: #ff0000;
+$red--three: #c61932;
+$red--four: #d11830;
+$green--one: #98d8ca;
+$green--two: #edf6eb;
+$green--three: #a3d39c;
+$green--four: #e6f0f4;
+$blue--one: #1e73be;
+$blue--two: #ecf4fb;
+$blue--three: #7eb7e6;
+$blue--four: #6d7f96;
+$blue--five: #404969;
+$yellow--one: #dd9933;
+$yellow--two: #f5cc26;
+$yellow--three: #f8f5de;
+$yellow--four: #ddb759;
+$orange--one: #f26522;
+$theme-color--default: $black;
+$theme-color--heading: $black;
+$transition--default: all 0.3s;
+
+$brown-cta: #8f6d4f;
+
+/* SCSS HEX */
+$cadet-gray: #a7b8bfff;
+$taupe-gray: #9e9da2ff;
+$rich-black: #10131aff;
+$raisin-black: #21232aff;
+$cadet-gray-2: #8b9ca5ff;
+$cadet-gray-3: #78919fff;
+$paynes-gray: #55626dff;
+$gray: #787b7fff;
+$dun: #dfc7abff;
+
+/* Theme Colors */
+:root {
+  // Defaults
+  scroll-behavior: initial;
+
+  --primary-font-family: "Poppins", sans-serif;
+
+  --premium-white: #f8f8f8;
+
+  --theme-color: #ed2079;
+  --secondary-color: #faefe1;
+
+  --drop-shadow: 0px 2px 20px 3px rgba(0, 0, 0, 0.35);
+  --light-drop-shadow: 0 2px 5px rgba(#000, 0.2);
+
+  --bg-color: #ed2079;
+
+  --deep-font-color: #1d1d1d;
+  --font-color: #4d4d44;
+
+  // --input-bg-color: #fff;
+  // --input-border-color: #eee;
+  // --input-border-focus-color: #f0885c;
+  // --input-text-color: #495057;
+  // --input-radius: 10px;
+
+  // --heading-text-color: #212529;
+  // --text-color: #4d4d4d;
+
+  // --card-bg-color: #fff;
+  // --card-radius: 1rem;
+
+  // --divider-color: #514f4d;
+}
+
+.theme-color {
+  background-color: var(--theme-color) !important;
+}
+
+.secondary-color {
+  background-color: var(--secondary-color) !important;
+}
+
+.font-color {
+  color: var(--font-color) !important;
+}
+
+.deep-font-color {
+  color: var(--deep-font-color) !important;
+}
+
+.amrc-form-input {
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  padding: 9.5px 0;
+  transition: all 0.3s ease-in-out;
+  color: #333;
+  border: 1px solid transparent;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+}
+
+// :root {
+//   --background: #ffffff;
+//   --foreground: #171717;
+// }
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --background: #0a0a0a;
+//     --foreground: #ededed;
+//   }
+// }
+
+// body {
+//   color: var(--foreground);
+//   background: var(--background);
+//   font-family: Arial, Helvetica, sans-serif;
+// }
+
+// @layer utilities {
+//   .text-balance {
+//     text-wrap: balance;
+//   }
+// }

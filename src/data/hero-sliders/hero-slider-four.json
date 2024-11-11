@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "subtitle": "NEW ARRIVALS",
+    "title": "Spring Collection",
+    "url": "/art-gallery/shop",
+    "bgImage": "/assets/images/hero-slider/hero-slider-four/1.png"
+  },
+  {
+    "id": "2",
+    "subtitle": "SKIN CARE",
+    "title": "New Products",
+    "url": "/art-gallery/shop",
+    "bgImage": "/assets/images/hero-slider/hero-slider-four/2.png"
+  }
+]

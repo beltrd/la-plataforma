@@ -1,0 +1,94 @@
+:root {
+  --blur-text-light: rgba(255, 255, 255, 0.6);
+  --blur-text-lighter: rgba(255, 255, 255, 0.9);
+  --blur-spacing-s: 8px;
+  --blur-spacing-l: 20px;
+  --blur-spacing-xxl: 64px;
+  --blur-width-container: 1200px;
+}
+
+.blur-hero-section {
+  align-items: flex-start;
+  // background-image: linear-gradient(15deg, $paynes-gray 0%, $cadet-gray 150%);
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: var(--blur-spacing-xxl) var(--blur-spacing-l);
+
+  .blur-card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: var(--blur-spacing-l);
+    grid-row-gap: var(--blur-spacing-l);
+    max-width: var(--blur-width-container);
+    width: 100%;
+
+    .blur-card {
+      list-style: none;
+      position: relative;
+    }
+
+    .blur-card:before {
+      content: "";
+      display: block;
+      padding-bottom: 150%;
+      width: 100%;
+    }
+
+    .blur-card__background {
+      background-position: center;
+      border-radius: var(--blur-spacing-l);
+      bottom: 0;
+      filter: brightness(0.75) saturate(1.2) contrast(0.85);
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform-origin: center;
+      transform: scale(1) translateZ(0);
+      transition: filter 200ms linear, transform 200ms linear;
+    }
+
+    .blur-card:hover .blur-card__background {
+      transform: scale(1.05) translateZ(0);
+    }
+
+    .blur-card__content {
+      left: 0;
+      padding: var(--blur-spacing-l);
+      position: absolute;
+      top: 0;
+    }
+
+    .blur-card__category {
+      color: var(--blur-text-light);
+      font-size: 0.9rem;
+      margin-bottom: var(--blur-spacing-s);
+      text-transform: uppercase;
+    }
+
+    .blur-card__heading {
+      color: var(--blur-text-lighter);
+      font-size: 1.9rem;
+      text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+      line-height: 1.4;
+      word-spacing: 100vw;
+    }
+  }
+
+  @media (min-width: 540px) {
+    .blur-card-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 960px) {
+    .blur-card-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .blur-card-grid:hover > .blur-card:not(:hover) .blur-card__background {
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  }
+}

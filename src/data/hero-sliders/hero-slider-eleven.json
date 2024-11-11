@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "subtitle": "#ABSTRACT",
+    "title": "The abstract collection",
+    "url": "/art-gallery/shop",
+    "image": "/assets/images/amrc/abstract-paint.png",
+    "bgColor": "#ebf4f2"
+  },
+  {
+    "id": "2",
+    "subtitle": "#FINE-ART",
+    "title": "New Collection Made for Your Fine Taste",
+    "url": "/art-gallery/shop",
+    "image": "/assets/images/amrc/fine-art-paint.png",
+    "bgColor": "#f4ede7"
+  }
+]

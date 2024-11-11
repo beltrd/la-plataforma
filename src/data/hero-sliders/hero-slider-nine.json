@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "subtitle": "AMRC Art Studio",
+    "title": "Discover the Magic of Handcrafted Ceramics",
+    "url": "/gallery",
+    "image": "/assets/images/hero-slider/hero-slider-nine/2.png"
+  },
+  {
+    "id": "2",
+    "subtitle": "Made with love",
+    "title": "Nature Ceramics",
+    "url": "/art-gallery/shop",
+    "image": "/assets/images/hero-slider/hero-slider-nine/1.png"
+  }
+]

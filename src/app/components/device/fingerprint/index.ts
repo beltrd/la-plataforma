@@ -1,0 +1,1 @@
+export { DeviceFingerprint } from "./component";

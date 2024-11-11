@@ -1,0 +1,1 @@
+export { ConceptContent } from "./component";

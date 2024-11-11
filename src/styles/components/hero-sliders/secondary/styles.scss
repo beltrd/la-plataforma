@@ -1,0 +1,174 @@
+.secondary-hero-slider {
+  &__slide {
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 75vh !important;
+  }
+
+  &__image {
+    transition: all 1s ease 0s;
+    transform: scale(0.8);
+
+    opacity: 0;
+
+    max-width: 100%;
+
+    @include respond(extra-large-mobile) {
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    @include respond(large-mobile) {
+      display: block;
+
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__content {
+    @include respond(extra-large-mobile) {
+      position: static;
+
+      width: 100%;
+
+      text-align: center;
+    }
+
+    @include respond(large-mobile) {
+      position: static;
+
+      width: 100%;
+
+      text-align: center;
+    }
+
+    & > * {
+      transition: all 1s ease 0s;
+
+      opacity: 0;
+    }
+
+    & .sub-title {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.25;
+
+      margin-bottom: 30px;
+
+      transform: translateY(30px);
+      letter-spacing: 5px;
+
+      color: $black--two;
+
+      @include respond(small-desktop) {
+        font-size: 16px;
+
+        margin-bottom: 20px;
+      }
+
+      @include respond(large-mobile) {
+        font-size: 16px;
+
+        margin-bottom: 20px;
+      }
+
+      @include respond(extra-small-mobile) {
+        font-size: 14px;
+      }
+    }
+
+    & .title {
+      font-family: "Dancing Script", cursive;
+      font-size: 73px;
+      font-weight: 400;
+      line-height: 1;
+
+      margin-bottom: 30px;
+
+      transform: translateY(30px);
+
+      color: $black--two;
+
+      @include respond(small-desktop) {
+        font-size: 53px;
+      }
+
+      @include respond(extra-large-mobile) {
+        font-size: 46px;
+      }
+
+      @include respond(large-mobile) {
+        font-size: 46px;
+      }
+
+      @include respond(small-mobile) {
+        font-size: 46px;
+      }
+
+      @include respond(extra-small-mobile) {
+        font-size: 40px;
+      }
+    }
+
+    & .slider-link {
+      transition-delay: 1.6s;
+      transform: translateY(30px);
+    }
+  }
+
+  .swiper-slide-active {
+    .secondary-hero-slider {
+      &__image {
+        transition-delay: 0.3s;
+        transform: scale(1);
+
+        opacity: 1;
+      }
+
+      &__content {
+        & > * {
+          opacity: 1;
+        }
+
+        & .sub-title {
+          transition-delay: 1s;
+          transform: translateY(0);
+        }
+
+        & .title {
+          transition-delay: 1.3s;
+          transform: translateY(0);
+        }
+
+        & .slider-link {
+          transition-delay: 1.6s;
+          transform: translateY(0);
+        }
+      }
+      &__pagination {
+        & > * {
+          opacity: 1;
+        }
+
+        & .current {
+          transition-delay: 1s;
+          transform: translateX(0);
+        }
+
+        & .border {
+          transition-delay: 1.2s;
+          transform: translateX(0);
+        }
+
+        & .total {
+          transition-delay: 1.4s;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}

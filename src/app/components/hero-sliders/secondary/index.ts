@@ -1,0 +1,1 @@
+export { SecondaryHeroSlider } from "./component";
