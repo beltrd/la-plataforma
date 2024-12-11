@@ -4,8 +4,8 @@ import Link from "next/link";
 import { IoIosClose } from "react-icons/io";
 import CustomScroll from "react-custom-scroll";
 
-import { useCart } from "../../../../../../context/cart";
-import { getDiscountPrice } from "../../../../../../lib/product";
+import { useCart } from "../../../../../context/cart";
+import { getDiscountPrice } from "../../../../../lib/product";
 
 const CartOverlay = ({ activeStatus, getActiveStatus }) => {
   const { cartItems, deleteFromCart } = useCart();

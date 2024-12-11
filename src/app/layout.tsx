@@ -9,9 +9,9 @@ import "swiper/css/pagination";
 
 import "../styles/globals.scss";
 
-import { Metadata } from "./components/metadata";
-import Footer from "./components/main-layout/components/footer";
-import Header from "./components/main-layout/components/header";
+import { Metadata } from "../components/metadata";
+import Footer from "../components/main-layout/components/footer";
+import Header from "../components/main-layout/components/header";
 import { CartProvider } from "../context/cart";
 
 // const geistSans = localFont({

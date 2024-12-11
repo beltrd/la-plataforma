@@ -4,7 +4,7 @@ import { IoIosClose } from "react-icons/io";
 import CustomScroll from "react-custom-scroll";
 // import { useToasts } from 'react-toast-notifications';
 // import { getDiscountPrice } from "@lib/product";
-import { getDiscountPrice } from "../../../../../../lib/product";
+import { getDiscountPrice } from "../../../../../lib/product";
 // import { deleteFromWishlist } from "../../../redux/actions/wishlistActions";
 
 const WishlistOverlay = ({

@@ -6,9 +6,9 @@ import { signInWithPopup } from "firebase/auth";
 
 import { auth, facebookProvider, googleProvider } from "../../configs/firebase";
 
-import { Button } from "../components/common/button";
-import { Input } from "../components/common/input";
-import { SocialLoginButton } from "../components/common/social-login-button";
+import { Button } from "../../components/common/button";
+import { Input } from "../../components/common/input";
+import { SocialLoginButton } from "../../components/common/social-login-button";
 
 // Mapping for sign-up types
 const signUpTypes = {

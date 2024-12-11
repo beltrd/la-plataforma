@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Input } from "../components/common/input";
-import { Button } from "../components/common/button";
+import { Input } from "../../components/common/input";
+import { Button } from "../../components/common/button";
 // import { SocialLoginButton } from "../components/common/social-login-button";
 // import { Platform } from "../components/common/social-login-button/component";
 import { useChangePageTitle } from "../../hooks/change-page-title";
