@@ -1,11 +1,18 @@
-import { ChallengeGenerateBody } from "../../infra/generated/back-end";
+import {
+  ChallengeGenerateBody,
+  InlineResponse2003,
+} from "../../infra/generated/back-end";
 import { backendApi } from "../../infra/services/back-end";
 
-const challengeGeneratePost = async (input: ChallengeGenerateBody) => {
+const challengeGeneratePost = async (
+  input: ChallengeGenerateBody
+): Promise<InlineResponse2003> => {
   try {
     const response = await backendApi.challengeGeneratePost(input);
 
-    return response;
+    console.log(response);
+
+    return response.data;
   } catch (error) {
     console.error(error);
 
